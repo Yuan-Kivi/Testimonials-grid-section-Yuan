@@ -1,0 +1,154 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+body {
+    background-color: #ecf2f8;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+#card {
+    margin: 10% 4%;
+}
+
+.card-item {
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.2);
+    font-size: 13px;
+}
+
+.card-item p {
+    opacity: 70%;
+    font-weight: 500;
+    line-height: 1.2rem;
+}
+
+.card-item h4 {
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#testimonial-1 {
+    background-color: #7541c8;
+    color: #cfcfcf;
+    position: relative;
+}
+
+.quote {
+    width: 100px;
+    position: absolute;
+    border-radius: 0;
+    right: 15%;
+    top: 0;
+    z-index: 0;
+}
+
+#testimonial-1 h4, #testimonial-2 h4 {
+    position: relative;
+    color: #ffffff;
+    z-index: 1;
+}
+
+.header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 14px;
+    z-index: 1;
+}
+
+.header .name {
+    font-weight: 600;
+    opacity: 80%;
+}
+
+#testimonial-1 .name, #testimonial-2 .name, #testimonial-4 .name {
+    color: #ffffff;
+}
+
+.header .position {
+    opacity: 50%;
+}
+
+.header img {
+    width: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+#testimonial-1 img, #testimonial-4 img {
+    border: 2px solid #7541c8;
+}
+
+#testimonial-2 {
+    background-color: #48556a;
+    color: #cfcfcf;
+}
+
+#testimonial-3, #testimonial-5 {
+    background-color: #ffffff;
+    color: #48556a;
+}
+
+#testimonial-4 {
+    background-color: #19212e;
+    color: #ecf2f8;
+}
+
+@media (min-width: 640px) {
+    #card, #left, #left-top, #left-bottom {
+        display: flex;
+    }
+    
+    body {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #card {
+        max-width: 1440px;
+        margin: auto;
+    }
+
+    #testimonial-5 {
+        flex-basis: 25%;
+    }
+
+    #left {
+        flex-direction: column;
+        flex-basis: 75%;
+    }
+
+    #left-top, #left-bottom {
+        flex-basis: 50%;
+    }
+
+    #testimonial-1, #testimonial-4 {
+        flex-basis: 65%;
+    }
+
+    #testimonial-2, #testimonial-3 {
+        flex-basis: 35%;
+    }
+
+    #left .card-item {
+        margin-right: 15px;
+    }
+}
